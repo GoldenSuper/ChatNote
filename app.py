@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QApplication
 
-from main_window import MainWindow
+from main_app import MainWindow
 
 import sys
 
