@@ -8,7 +8,10 @@ class ConnectDB:
         self.path = "db/"
         self.extension = ".db"
         
-
+    def createChat(name):
+        connection = sqlite3.connect("db/" + name + ".db")
+        # creating db tables
+        connection.close()
     def GetChatsFileNames(extension: str) -> list:
         fileNamesList = []
         for el in os.listdir("db/"):

@@ -20,10 +20,18 @@ class Ui_ChatNameWidget(object):
         self.btn_removeChat = QtWidgets.QPushButton(ChatNameWidget)
         self.btn_removeChat.setGeometry(QtCore.QRect(235, 0, 31, 31))
         self.btn_removeChat.setText("")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/img/images/delete.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
+        self.btn_removeChat.setIcon(icon)
+        self.btn_removeChat.setIconSize(QtCore.QSize(31, 31))
         self.btn_removeChat.setObjectName("btn_removeChat")
         self.btn_editName = QtWidgets.QPushButton(ChatNameWidget)
         self.btn_editName.setGeometry(QtCore.QRect(205, 0, 31, 31))
         self.btn_editName.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap(":/img/images/edit.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
+        self.btn_editName.setIcon(icon1)
+        self.btn_editName.setIconSize(QtCore.QSize(31, 31))
         self.btn_editName.setObjectName("btn_editName")
         self.lbl_chatName = QtWidgets.QLabel(ChatNameWidget)
         self.lbl_chatName.setGeometry(QtCore.QRect(5, 0, 201, 31))
@@ -40,3 +48,4 @@ class Ui_ChatNameWidget(object):
     def retranslateUi(self, ChatNameWidget):
         _translate = QtCore.QCoreApplication.translate
         ChatNameWidget.setWindowTitle(_translate("ChatNameWidget", "Form"))
+import resources_rc

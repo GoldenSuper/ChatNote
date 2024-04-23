@@ -1,5 +1,7 @@
 mainwindow.ui
 chatnamewidget.ui
+inputdialog.ui
+messagewidget.ui
 db
 
 # Byte-compiled / optimized / DLL files
